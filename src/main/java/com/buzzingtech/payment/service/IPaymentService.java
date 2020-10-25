@@ -1,12 +1,8 @@
-/**
- * 
- */
 package com.buzzingtech.payment.service;
 
-/**
- * @author abhijeet
- *Oct 21, 2020
- */
-public class IPaymentService {
+import com.buzzingtech.payment.domain.ItemEntity;
+import com.buzzingtech.payment.web.PostOrderResponseDTO;
 
+public interface IPaymentService {
+public PostOrderResponseDTO generateRzpOrderResponse(ItemEntity item);
 }

@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
       this.orders = data
     })
   }
-  generateOrderInfo(item: Item) {
+  generateOrderInfo(item: Item) { 
     console.log("ITEM", item)
     this.paymentS.createOrder(item).subscribe(data => {
       console.log("0rder", data)
